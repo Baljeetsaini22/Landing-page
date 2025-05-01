@@ -1,0 +1,136 @@
+@media screen and (min-width:1026px) {
+    .nav {
+        width: 85%;
+    }
+    .nav-menu li {
+        padding: 0 20px;
+        
+    }
+    .box1-class {
+        margin-top: 40px;
+    }
+    .content1 {
+        font-size: 2.3rem;
+    }
+    .content2 {        
+        font-size: 2rem;
+    }
+    .content3 {
+        padding: 20px;
+        font-size: 2rem;
+    }
+    .text span {
+        font-size: 3rem;
+    }
+    .text strong {        
+        font-size: 2rem;    
+    }
+    .text p {
+        font-size: 1.5rem;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .nav-menu li {
+        display: inline; 
+        padding: 0px 5px;
+        font-weight: 500;
+    }
+    .box1-class {
+        margin-top: 20px;
+    }   
+    .content1 {
+        font-size: 1rem;
+    }
+    .content3 {
+        padding: 15px;
+        font-size: 1rem;
+    }
+    button {
+        background-color: hsl(5, 85%, 63%);
+        font-size: 1rem;
+        padding: 7px 15px;
+        margin: 10px 0;
+    }
+    .text {
+        line-height: 20px;
+    }
+}
+@media screen and (max-width:520px) {
+    .nav-menu li {
+        display: inline; 
+        padding: 0px 1px;
+    }
+    .parent {
+        flex-direction: column;
+    }
+    .box1 {
+        width: 100%;
+    }
+    .box2 {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .title-img {        
+        flex-direction: column;
+    }
+    .img-flex {       
+        width: 100%;
+    }
+    .img-flex img {
+        margin: 20px;
+        width: 25%;
+    }
+}
+/* mobile styles */
+@media screen and (max-width: 426px) {
+    .menu-icon {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .nav-menu {
+        display: none;
+        width: 50%;
+        position: absolute;
+        top: 100px;        
+        background-color: black;
+        flex-direction: column;
+        right: 5%;
+        transition: .3s;        
+    }
+    .nav-menu li a {
+        text-decoration: none;
+        display: block;
+        padding: 1rem;
+        font-family: Arial, sans-serif;
+        color: white;
+        font-weight: 700;
+        
+    }
+    #menu-toggle:checked ~ .nav-menu {
+        display: flex;
+    }
+    .nav-container {
+        flex-direction: row;
+        position: relative;
+    }
+    .box1-class {
+        flex-direction: column;
+    }
+    .content1 {
+        width: 100%;
+        font-size: 1rem;
+    }
+    .content2 {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .left-img .photo {
+        display: none;
+    }
+    .showing{
+        display: block;
+    }
+}
